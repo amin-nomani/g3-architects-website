@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*shader styles */
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.display-flex{
+  display: flex;
+}
+.bg-light{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.text-yellow{
+  color:  rgba(255, 144, 14, 1);;
+}
+.dark-1{
+  color: rgba(19, 19, 19, 1);
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.text-dark-2{
+  color: #424242;
+}
+.text-dark-3{
+  color: #727272;
+  font-size: 16px;
+  line-height: 26px;
+}
+.section-title{
+  font-size: 2.8rem;
+  max-width: 468px;
+}
+.btn-primary{
+  background-color: rgba(255, 144, 14, 1);
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  border: none;
+}
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main>section{
+  margin-top: 130px;
+}
+/* header styles */
+.brand{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* navbar related styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+}
+.navbar, .baner{
+  max-width: 1400px;
+}
+
+/* baner related styles  */
+.baner{
+  padding-top: 100px;
+}
+.baner-text{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.baner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.baner-description{
+  margin: 20px 0 32px;
+}
+.baner-img{
+  width: 100%;
+  padding-bottom: 54px;
+}
+/* teams relative styles */
+.teams{
+  align-items: center;
+}
+.team-img-area{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.team-text-area{
+  margin-left: 72px;
+  max-width: 538px;
+}
+
+#quick-list{
+  color: #727272;
+  font-weight: 500;
+}
+.text-description{
+  padding: 25px 0 32px 0;
+}
+/* features section start */
+.features{
+  
+  gap: 140px;
+}
+.features-text-aria{
+  width: 586px;
+  margin: auto 0;
+}
+.features-img-aria{
+  width: 800px;
+}
+#features-text-side{
+border-left: 5px solid rgba(255, 144, 14, 1);
+padding-left: 25px;
+}
+.features-card{
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+margin-bottom: 20px;
+}
+.features-card .features-title{
+  font-weight: 600;
+  font-size: 1.25rem; 
+  padding-bottom: 10px;
+}
+#experience{
+  padding: 42px 40px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-size: 45px;
+  font-weight: 700;
+}
+.features-img-aria{
+  width: 100%;
+
+}
+/* some section styles */
+.some-description{
+  margin: 20px 0 30px 0;
+  width: 540px;
+}
+.some-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.some-card{
+  border: 1px solid rgba(255, 144, 14, 1);
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.some-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+}
+.some-text{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* sponsors section styles */
+.sponsors-info{
+  max-width: 542px;
+  margin: 50px auto;
+  text-align: center;
+
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+.sponsor-companies img{
+  filter: grayscale(100%);
+  max-width: 150px;
+
+}
+/* footer section styles */
+footer{
+  background-color:rgba(255, 244, 231, 1) ;
+  margin: 100px auto;
+}
+.footer-text{
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  color: rgba(66, 66, 66, 1);
+  padding: 38px 0;
+  text-align: center;
+}
+/* responsive media query */
+@media screen and (max-width: 576px){
+  .navbar,
+   .nav-links,
+   .teams,
+   .features{
+    flex-direction: column;
+  }
+  .team-img-area,
+   .some-cards,
+   .sponsor-companies{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .some-cards{
+    justify-items: center;
+    gap: 24px;
+  }
+  .team-text-area{
+    margin-top: 30px;
+  }
+  #experience{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px){
+  .teams,
+  .features{
+    flex-direction: column;
+  }
+  .team-text-area{
+    margin: 35px auto;
+  }
+  .sponsor-companies,
+  .some-cards{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+   #experience{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+}
